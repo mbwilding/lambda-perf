@@ -30,11 +30,7 @@
   <main class="container">
     <h1 class="mt-5">Lambda benchmark</h1>
     <p class="lead">Visualize 10 executions for each runtime, updated daily.</p>
-    <p>
-      Does 250 writes to an S3 key with the iteration number as the content, then deletes the file.
-      <br/>
-      Not ran in parallel as to make it fair for other languages when added.
-    </p>
+    <p>The procedure involves executing 250 write operations to a designated S3 key, each time embedding the respective iteration number as the content of the file. Upon completion of all write operations, the file is subsequently deleted.</p>
     <p class="align-left">
       <button type="button" id="replayAnimationBtn" class="btn btn-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise"
