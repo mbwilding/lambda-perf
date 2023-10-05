@@ -117,8 +117,8 @@ const drawLang = async (idx, data) => {
   const runtimeName = newElement.getElementsByClassName("runtimeName")[0];
   runtimeName.innerHTML = `${runtime.displayName}`;
 
-  for (let i = 0; i < data.initDurations.length; ++i) {
-    await sleep(data.initDurations[i]);
+  for (let i = 0; i < data.duration.length; ++i) {
+    await sleep(data.duration[i]);
     addSquare(coldStartElement);
   }
 };
