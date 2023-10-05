@@ -11,8 +11,7 @@ on:
         description: 'region on which you want to deploy'
         type: choice
         options:
-          - eu-west-1
-          - us-east-1
+          - ap-southeast-2
         required: true
       lambdaPerfEnv:
         description: 'environment on which you want to deploy'
