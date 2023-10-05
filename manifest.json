@@ -23,13 +23,6 @@
       "architectures": ["x86_64", "arm64"]
     },
     {
-      "displayName": "dotnet7 aot (prov.al2)",
-      "runtime": "provided.al2",
-      "handler": "bootstrap",
-      "path": "dotnet7_aot_on_provided_al2",
-      "architectures": ["x86_64", "arm64"]
-    },
-    {
       "displayName": "rust (prov.al2)",
       "runtime": "provided.al2",
       "handler": "bootstrap",
