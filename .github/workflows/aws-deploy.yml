@@ -13,7 +13,6 @@ on:
         description: 'environment on which you want to deploy'
         type: choice
         options:
-          - staging
           - production
         required: true
 
