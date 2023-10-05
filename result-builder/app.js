@@ -124,7 +124,7 @@ const computeMean = (array) => array.reduce((a, b) => a + b, 0) / array.length;
 
 exports.handler = async (_, context) => {
   const TABLE = "report-log";
-  const OWNER = "maxday";
+  const OWNER = "";
   const REPO = "lambda-perf";
   const REGION = process.env.AWS_REGION;
   const GH_AUTH_TOKEN = process.env.GH_AUTH_TOKEN;
