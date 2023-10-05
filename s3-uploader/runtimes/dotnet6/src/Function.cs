@@ -14,7 +14,8 @@ public class Function
     // ReSharper disable once UnusedMember.Global
     public async Task Handler(ILambdaContext context)
     {
-        var bucketName = Environment.GetEnvironmentVariable("BUCKET_NAME") ?? throw new Exception("BUCKET_NAME not set");
+        var region = Environment.GetEnvironmentVariable("AWS_REGION") ?? throw new Exception("AWS_REGION not set");
+        var bucketName = $"lambda-perf-{region}";
         var bucketKey = $"test/{context.FunctionName}";
         
         var s3 = new AmazonS3Client();

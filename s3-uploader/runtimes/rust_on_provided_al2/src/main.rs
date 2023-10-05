@@ -12,7 +12,8 @@ async fn main() -> Result<(), Error> {
 }
 
 async fn func(event: LambdaEvent<Value>) -> Result<(), Error> {
-    let bucket_name = std::env::var("BUCKET_NAME").expect("BUCKET_NAME not set");
+    let region = std::env::var("AWS_REGION")?;
+    let bucket_name = format!("lambda-perf-{}", region);
     let bucket_key = format!("test/{}", event.context.env_config.function_name);
 
     let aws_config = aws_config::load_from_env().await;
