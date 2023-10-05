@@ -118,14 +118,15 @@ const drawLang = async (idx, data) => {
   runtimeName.innerHTML = `${runtime.displayName}`;
 
   for (let i = 0; i < data.durations.length; ++i) {
+    addSquare(runElement, data.durations[i]);
     await sleep(data.durations[i]);
-    addSquare(runElement);
   }
 };
 
-const addSquare = (parent) => {
+const addSquare = (parent, durationMs) => {
   const span = document.createElement("span");
   span.classList.add("square");
+  span.style.animationDuration = `${durationMs}ms`;
   parent.appendChild(span);
 };
 

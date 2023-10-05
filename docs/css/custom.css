@@ -35,14 +35,6 @@ hr {
 .align-left {
     float: left;
 }
-.square {
-    background-color: #0d6efd;
-    border: 1px solid #808080;
-    height: 10px;
-    width: 9%;
-    display: inline-block;
-    margin-left: .5%;
-}
 .fixedHeight {
     height: 25px;
 }
@@ -77,4 +69,24 @@ hr {
 }
 .badge:empty {
     display: inline-block;
+}
+.square {
+    background-color: #0d6efd;
+    border: 1px solid #808080;
+    height: 10px;
+    width: 9%;
+    display: inline-block;
+    margin-left: .5%;
+    transform-origin: left center; /* Added to scale from the left */
+    animation-name: growSquare;
+    animation-timing-function: linear;
+}
+
+@keyframes growSquare {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
