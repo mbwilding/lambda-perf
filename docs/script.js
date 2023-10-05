@@ -22,7 +22,7 @@ const animate = async (dataManager) => {
     const promiseArray = [];
     let i = 0;
     data.runtimeData.sort(
-      (a, b) => a.averageColdStartDuration - b.averageColdStartDuration
+      (a, b) => a.averageDuration - b.averageDuration
     );
     for (runtime of data.runtimeData.filter(
       (r) => r.memorySize == memorySize && r.architecture === architecture
@@ -97,7 +97,7 @@ const drawLang = async (idx, data) => {
     .cloneNode(true);
   newElement.id = `runtime_${idx}`;
   document.getElementById("runtimes").appendChild(newElement);
-  const coldStartElement = newElement.getElementsByClassName("coldstarts")[0];
+  const coldStartElement = newElement.getElementsByClassName("runs")[0];
 
   const averageColdStartDuration = newElement.getElementsByClassName(
     "averageColdStartDuration"
