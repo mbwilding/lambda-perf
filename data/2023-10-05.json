@@ -5,7 +5,7 @@
 	"runtimeData": [
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-1024-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				34.95,
 				37.32,
@@ -38,7 +38,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-128-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				43.83,
 				45.04,
@@ -71,7 +71,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-2048-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				40.61,
 				44.35,
@@ -170,7 +170,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-4096-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				36.89,
 				37.35,
@@ -203,7 +203,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-512-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				35.16,
 				35.94,
@@ -302,7 +302,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-4096-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				45.89,
 				43.81,
@@ -368,7 +368,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-128-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				34.94,
 				36.43,
@@ -401,7 +401,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-2048-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				35.1,
 				35.23,
@@ -632,7 +632,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-512-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				40.13,
 				46.73,
@@ -665,7 +665,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-256-arm64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				35.45,
 				39.41,
@@ -731,7 +731,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-256-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				38.55,
 				48.6,
@@ -764,7 +764,7 @@
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-1024-x86_64",
-			"displayName": "rust (prov.al2)",
+			"displayName": "rust",
 			"initDurations": [
 				44.71,
 				40,

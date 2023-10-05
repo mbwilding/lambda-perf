@@ -9,7 +9,7 @@
       "architectures": ["x86_64", "arm64"]
     },
     {
-      "displayName": "rust (prov.al2)",
+      "displayName": "rust",
       "runtime": "provided.al2",
       "handler": "bootstrap",
       "path": "rust_on_provided_al2",
