@@ -84,6 +84,9 @@ provider:
     - Effect: Allow
       Action: "sqs:SendMessage"
       Resource: "arn:aws:sqs:${aws:region}:${aws:accountId}:lambda-perf-invoker"
+    - Effect: Allow
+      Action: "s3:*"
+      Resource: "arn:aws:s3:::lambda-perf-${aws:region}/test/*"
 
 package:
   patterns:
@@ -169,7 +172,7 @@ functions:
     handler: function-deployer/app.handler
     environment:
       ROLE_ARN: arn:aws:iam::${aws:accountId}:role/lambda-perf-${sls:stage}-role-${aws:region}
-      LOG_PROCESSOR_ARN: 
+      LOG_PROCESSOR_ARN:
         "Fn::GetAtt": [ ReportLogProcessorLambdaFunction, Arn ]
       QUEUE_NAME: lambda-perf-invoker
       ACCOUNT_ID: ${aws:accountId}
