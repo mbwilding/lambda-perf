@@ -1,391 +1,511 @@
 {
 	"metadata": {
-		"generatedAt": "2023-10-05T13:13:28.357Z"
+		"generatedAt": "2023-10-05T13:48:45.962Z"
 	},
 	"runtimeData": [
 		{
-			"runtime": "lambda-perf-dotnet6-4096-x86_64",
+			"runtime": "lambda-perf-dotnet6-128-arm64",
 			"displayName": "dotnet6",
 			"initDurations": [
-				204.87,
-				225.48,
-				228.9,
-				229.34,
-				222.59
-			],
-			"memorySize": 4096,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 79.2,
-			"averageDuration": 4956.946,
-			"averageColdStartDuration": 222.236
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-512-x86_64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				248.72,
-				235.56,
-				239.73,
-				238.71,
-				233.88
-			],
-			"memorySize": 512,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 78.2,
-			"averageDuration": 5609.562,
-			"averageColdStartDuration": 239.32
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-1024-arm64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				34.9,
-				35.29,
-				5.67,
-				36.07,
-				35.74
-			],
-			"memorySize": 1024,
-			"architecture": "arm64",
-			"averageMemoryUsed": 18.8,
-			"averageDuration": 4597.456,
-			"averageColdStartDuration": 29.534
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-2048-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				38.29,
-				39.2,
-				45.69,
-				44.73,
-				46.27
-			],
-			"memorySize": 2048,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 19.4,
-			"averageDuration": 4487.212,
-			"averageColdStartDuration": 42.836
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-2048-arm64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				277.82,
-				281.11,
-				246.81,
-				293.52,
-				262.06
-			],
-			"memorySize": 2048,
-			"architecture": "arm64",
-			"averageMemoryUsed": 80.8,
-			"averageDuration": 4902.54,
-			"averageColdStartDuration": 272.264
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-1024-x86_64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				232.87,
-				240.3,
-				204.47,
-				207.35,
-				249.51
-			],
-			"memorySize": 1024,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 78.6,
-			"averageDuration": 5084.268,
-			"averageColdStartDuration": 226.9
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-4096-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				48.22,
-				45.93,
-				55.95,
-				52.5,
-				46.25
-			],
-			"memorySize": 4096,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 19.4,
-			"averageDuration": 4666.706,
-			"averageColdStartDuration": 49.77
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-128-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				45.08,
-				39.72,
-				9.36,
-				51.1,
-				46.53
+				270.36,
+				286.2,
+				248.96,
+				280.41,
+				268.69,
+				294.42,
+				273.12,
+				269.17,
+				274.65,
+				265.12
 			],
 			"memorySize": 128,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 18,
-			"averageDuration": 4549.336,
-			"averageColdStartDuration": 38.358
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-128-x86_64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				232.76,
-				232.37,
-				216.72,
-				205.91,
-				237.92
-			],
-			"memorySize": 128,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 76.4,
-			"averageDuration": 10311.71,
-			"averageColdStartDuration": 225.136
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-512-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				39.06,
-				9.11,
-				54.52,
-				39.6,
-				49.12
-			],
-			"memorySize": 512,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 18,
-			"averageDuration": 4533.256,
-			"averageColdStartDuration": 38.282
+			"architecture": "arm64",
+			"averageMemoryUsed": 76.2,
+			"averageDuration": 6505.803,
+			"averageColdStartDuration": 273.11
 		},
 		{
 			"runtime": "lambda-perf-rust_on_provided_al2-2048-arm64",
 			"displayName": "rust (prov.al2)",
 			"initDurations": [
-				35.54,
-				34.51,
-				35.42,
-				36.13,
-				36.11
+				35.37,
+				35.75,
+				35.26,
+				34.8,
+				35.32,
+				35.39,
+				34.86,
+				36.02,
+				35.37,
+				35.76
 			],
 			"memorySize": 2048,
 			"architecture": "arm64",
-			"averageMemoryUsed": 20,
-			"averageDuration": 4679.496,
-			"averageColdStartDuration": 35.542
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-1024-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				45.05,
-				45.45,
-				52.16,
-				46.57,
-				42.52
-			],
-			"memorySize": 1024,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 19,
-			"averageDuration": 4469.986,
-			"averageColdStartDuration": 46.35
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-4096-arm64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				34.87,
-				35.17,
-				38.59,
-				37.4,
-				37.43
-			],
-			"memorySize": 4096,
-			"architecture": "arm64",
-			"averageMemoryUsed": 22.2,
-			"averageDuration": 4467.196,
-			"averageColdStartDuration": 36.692
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-1024-arm64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				266.49,
-				276.49,
-				272.19,
-				282.41,
-				272.75
-			],
-			"memorySize": 1024,
-			"architecture": "arm64",
-			"averageMemoryUsed": 82,
-			"averageDuration": 5325.764,
-			"averageColdStartDuration": 274.066
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-128-arm64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				296.93,
-				273.47,
-				245.63,
-				286.67,
-				289.55
-			],
-			"memorySize": 128,
-			"architecture": "arm64",
-			"averageMemoryUsed": 79.6,
-			"averageDuration": 11948.954,
-			"averageColdStartDuration": 278.45
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-512-arm64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				34.94,
-				6.1,
-				35.55,
-				35.12,
-				34.31
-			],
-			"memorySize": 512,
-			"architecture": "arm64",
-			"averageMemoryUsed": 18.8,
-			"averageDuration": 4438.612,
-			"averageColdStartDuration": 29.204
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-2048-x86_64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				228.2,
-				209.19,
-				232.03,
-				230.64,
-				221.33
-			],
-			"memorySize": 2048,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 78.4,
-			"averageDuration": 4888.812,
-			"averageColdStartDuration": 224.278
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-256-arm64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				36.03,
-				38.74,
-				35.17,
-				37.97,
-				36.2
-			],
-			"memorySize": 256,
-			"architecture": "arm64",
-			"averageMemoryUsed": 18,
-			"averageDuration": 4489.568,
-			"averageColdStartDuration": 36.822
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-512-arm64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				288.07,
-				289.01,
-				286.91,
-				273.83,
-				295.13
-			],
-			"memorySize": 512,
-			"architecture": "arm64",
-			"averageMemoryUsed": 82.2,
-			"averageDuration": 5970.008,
-			"averageColdStartDuration": 286.59
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-128-arm64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				36.33,
-				35.74,
-				35.76,
-				36.08,
-				6.04
-			],
-			"memorySize": 128,
-			"architecture": "arm64",
-			"averageMemoryUsed": 17.2,
-			"averageDuration": 4604.222,
-			"averageColdStartDuration": 29.99
-		},
-		{
-			"runtime": "lambda-perf-rust_on_provided_al2-256-x86_64",
-			"displayName": "rust (prov.al2)",
-			"initDurations": [
-				42.12,
-				44.6,
-				39.81,
-				45.55,
-				38.3
-			],
-			"memorySize": 256,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 19,
-			"averageDuration": 4604.328,
-			"averageColdStartDuration": 42.076
-		},
-		{
-			"runtime": "lambda-perf-dotnet6-256-x86_64",
-			"displayName": "dotnet6",
-			"initDurations": [
-				270.39,
-				237.56,
-				230.14,
-				229.38,
-				236.92
-			],
-			"memorySize": 256,
-			"architecture": "x86_64",
-			"averageMemoryUsed": 77,
-			"averageDuration": 6697.032,
-			"averageColdStartDuration": 240.878
+			"averageMemoryUsed": 19.3,
+			"averageDuration": 2397.624,
+			"averageColdStartDuration": 35.39
 		},
 		{
 			"runtime": "lambda-perf-dotnet6-256-arm64",
 			"displayName": "dotnet6",
 			"initDurations": [
-				283.65,
-				288.1,
-				295.33,
-				292.6,
-				289.41
+				294.07,
+				279.01,
+				269.44,
+				270.68,
+				270.15,
+				264.57,
+				282.7,
+				265.54,
+				284.26,
+				267.45
 			],
 			"memorySize": 256,
 			"architecture": "arm64",
-			"averageMemoryUsed": 82,
-			"averageDuration": 7493.12,
-			"averageColdStartDuration": 289.818
+			"averageMemoryUsed": 77.3,
+			"averageDuration": 4118.161,
+			"averageColdStartDuration": 274.787
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-256-arm64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				35.66,
+				35.6,
+				35.47,
+				36.08,
+				6.19,
+				35.39,
+				35.95,
+				35.36,
+				34.41,
+				35.67
+			],
+			"memorySize": 256,
+			"architecture": "arm64",
+			"averageMemoryUsed": 17.1,
+			"averageDuration": 2316.944,
+			"averageColdStartDuration": 32.578
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-1024-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				239.38,
+				238.17,
+				233.34,
+				248.17,
+				239.48,
+				244.09,
+				232.84,
+				237.89,
+				211.66,
+				241.67
+			],
+			"memorySize": 1024,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 72.8,
+			"averageDuration": 2731.268,
+			"averageColdStartDuration": 236.669
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-4096-arm64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				37.22,
+				36.75,
+				37.58,
+				37.28,
+				35.5,
+				35.42,
+				37.45,
+				8.12,
+				36.7,
+				34.95
+			],
+			"memorySize": 4096,
+			"architecture": "arm64",
+			"averageMemoryUsed": 20.2,
+			"averageDuration": 2266.699,
+			"averageColdStartDuration": 33.697
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-2048-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				206.7,
+				219.18,
+				213.25,
+				231.65,
+				197.61,
+				241.05,
+				239,
+				209.79,
+				230.98,
+				207.01
+			],
+			"memorySize": 2048,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 73.1,
+			"averageDuration": 2572.054,
+			"averageColdStartDuration": 219.622
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-1024-arm64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				278.24,
+				287.61,
+				250.78,
+				276.84,
+				280.85,
+				267.06,
+				293.27,
+				254.99,
+				267.35,
+				263.98
+			],
+			"memorySize": 1024,
+			"architecture": "arm64",
+			"averageMemoryUsed": 76.7,
+			"averageDuration": 2688.8,
+			"averageColdStartDuration": 272.097
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-128-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				45.24,
+				47.34,
+				40.72,
+				44.47,
+				45.51,
+				45.07,
+				6.38,
+				44.31,
+				46.96,
+				38.63
+			],
+			"memorySize": 128,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 18,
+			"averageDuration": 2308.829,
+			"averageColdStartDuration": 40.463
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-2048-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				47.07,
+				45.36,
+				39.42,
+				49.04,
+				44.64,
+				51.95,
+				45,
+				46.13,
+				46.77,
+				43.92
+			],
+			"memorySize": 2048,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 18.8,
+			"averageDuration": 2318.426,
+			"averageColdStartDuration": 45.93
 		},
 		{
 			"runtime": "lambda-perf-dotnet6-4096-arm64",
 			"displayName": "dotnet6",
 			"initDurations": [
-				282.19,
-				267.66,
-				260.59,
-				253.18,
-				268.34
+				251.44,
+				262.8,
+				249.96,
+				252.57,
+				254.25,
+				256.5,
+				256.51,
+				262.54,
+				257.3,
+				251.16
 			],
 			"memorySize": 4096,
 			"architecture": "arm64",
-			"averageMemoryUsed": 83,
-			"averageDuration": 5161.89,
-			"averageColdStartDuration": 266.392
+			"averageMemoryUsed": 78.5,
+			"averageDuration": 2613.527,
+			"averageColdStartDuration": 255.503
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-128-arm64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				36.1,
+				37.15,
+				36.49,
+				36.37,
+				34.8,
+				35.47,
+				35.26,
+				35.57,
+				36.12,
+				5.96
+			],
+			"memorySize": 128,
+			"architecture": "arm64",
+			"averageMemoryUsed": 17.1,
+			"averageDuration": 2356.946,
+			"averageColdStartDuration": 32.929
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-512-arm64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				36.52,
+				36.06,
+				34.95,
+				34.41,
+				37.72,
+				34.7,
+				35.28,
+				35.82,
+				35.65,
+				35.15
+			],
+			"memorySize": 512,
+			"architecture": "arm64",
+			"averageMemoryUsed": 19.3,
+			"averageDuration": 2366.166,
+			"averageColdStartDuration": 35.626
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-256-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				44.74,
+				43.64,
+				44.88,
+				45.15,
+				46.93,
+				53.86,
+				45.41,
+				46.8,
+				39.41,
+				39.37
+			],
+			"memorySize": 256,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 18.5,
+			"averageDuration": 2369.331,
+			"averageColdStartDuration": 45.019
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-4096-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				230.25,
+				199.18,
+				232.62,
+				228.13,
+				220.31,
+				219.51,
+				234.02,
+				232.58,
+				194.29,
+				232.83
+			],
+			"memorySize": 4096,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 73.6,
+			"averageDuration": 2610.04,
+			"averageColdStartDuration": 222.372
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-512-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				236.07,
+				215.36,
+				243.15,
+				248.24,
+				234.06,
+				237.09,
+				238.37,
+				236.93,
+				237.3,
+				237.06
+			],
+			"memorySize": 512,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 72.8,
+			"averageDuration": 2941.884,
+			"averageColdStartDuration": 236.363
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-256-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				239.17,
+				199.88,
+				238.85,
+				224.43,
+				208.76,
+				245.45,
+				237.13,
+				235.23,
+				240.81,
+				241.29
+			],
+			"memorySize": 256,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 72.4,
+			"averageDuration": 3605.766,
+			"averageColdStartDuration": 231.1
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-4096-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				47.07,
+				45.33,
+				49.89,
+				53.52,
+				47.62,
+				41.27,
+				42.36,
+				45.43,
+				46.44,
+				40.1
+			],
+			"memorySize": 4096,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 19.3,
+			"averageDuration": 2328.028,
+			"averageColdStartDuration": 45.903
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-1024-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				41.37,
+				43.43,
+				45.03,
+				39.22,
+				39.14,
+				46.39,
+				40.91,
+				44.7,
+				44.58,
+				45.33
+			],
+			"memorySize": 1024,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 18.5,
+			"averageDuration": 2341.876,
+			"averageColdStartDuration": 43.01
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-512-arm64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				288.27,
+				273.72,
+				279.41,
+				296.5,
+				272.84,
+				295.67,
+				271.44,
+				258.5,
+				276.88,
+				292.99
+			],
+			"memorySize": 512,
+			"architecture": "arm64",
+			"averageMemoryUsed": 77.2,
+			"averageDuration": 3099.301,
+			"averageColdStartDuration": 280.622
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-2048-arm64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				271.31,
+				266.78,
+				267.46,
+				271.69,
+				270.35,
+				283.5,
+				267.02,
+				259.12,
+				273.27,
+				266.26
+			],
+			"memorySize": 2048,
+			"architecture": "arm64",
+			"averageMemoryUsed": 77.2,
+			"averageDuration": 2559.451,
+			"averageColdStartDuration": 269.676
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-1024-arm64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				35.84,
+				37.32,
+				35.14,
+				35.58,
+				35.04,
+				35.46,
+				37.75,
+				35.32,
+				34.44,
+				36.38
+			],
+			"memorySize": 1024,
+			"architecture": "arm64",
+			"averageMemoryUsed": 19.1,
+			"averageDuration": 2353.595,
+			"averageColdStartDuration": 35.827
+		},
+		{
+			"runtime": "lambda-perf-dotnet6-128-x86_64",
+			"displayName": "dotnet6",
+			"initDurations": [
+				237.42,
+				228.69,
+				233.58,
+				228.3,
+				235.86,
+				240.82,
+				233.82,
+				208.09,
+				208.65,
+				237.17
+			],
+			"memorySize": 128,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 71.9,
+			"averageDuration": 5736.509,
+			"averageColdStartDuration": 229.24
+		},
+		{
+			"runtime": "lambda-perf-rust_on_provided_al2-512-x86_64",
+			"displayName": "rust (prov.al2)",
+			"initDurations": [
+				38.64,
+				44.17,
+				38.97,
+				45.09,
+				41.72,
+				45.33,
+				38.35,
+				55.66,
+				45.7,
+				46.38
+			],
+			"memorySize": 512,
+			"architecture": "x86_64",
+			"averageMemoryUsed": 18.5,
+			"averageDuration": 2412.646,
+			"averageColdStartDuration": 44.001
 		}
 	]
 }
