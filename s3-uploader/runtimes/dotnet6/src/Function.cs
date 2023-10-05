@@ -20,13 +20,13 @@ public class Function
         
         var s3 = new AmazonS3Client();
         
-        for (var i = 0; i < 1000; i++)
+        for (var i = 0; i < 250; i++)
         {
             var request = new PutObjectRequest
             {
                 BucketName = bucketName,
                 Key = bucketKey,
-                ContentBody = Random.Shared.Next(10000000, 100000000).ToString()
+                ContentBody = i.ToString()
             };
 
             await s3.PutObjectAsync(request);
