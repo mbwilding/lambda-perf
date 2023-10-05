@@ -84,6 +84,7 @@ const createFunction = async (
     ...(layer && {
       Layers: [layer],
     }),
+    Timeout: 900,
     Environment: {
       Variables: {
         BUCKET_NAME: `${project}-${region}`,
