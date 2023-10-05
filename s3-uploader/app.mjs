@@ -19,7 +19,7 @@ const sendToS3 = async (
   const codeFilename = `code_${architecture}.zip`;
   const fileStream = fs.createReadStream(`./runtimes/${path}/${codeFilename}`);
   const putObjectParams = {
-    Bucket: `lambda-perf-${region}`,
+    Bucket: `lambda-perf-dev-serverlessdeploymentbucket-bhtkqnoc4u6z`,
     Key: `${path}/${codeFilename}`,
     Body: fileStream,
   };
