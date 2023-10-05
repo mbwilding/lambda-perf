@@ -70,7 +70,7 @@ const createFunction = async (
     Handler: handler,
     Runtime: runtime,
     Code: {
-      S3Bucket: `lambda-perf-dev-serverlessdeploymentbucket-bhtkqnoc4u6z`,
+      S3Bucket: `${project}-${region}`,
       S3Key: `${path}/code_${architecture}.zip`,
     },
     Role: roleArn,

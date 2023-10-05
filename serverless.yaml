@@ -5,6 +5,8 @@ provider:
   memorySize: 128
   runtime: nodejs18.x
   region: ${env:AWS_REGION}
+  deploymentBucket:
+    name: lambda-perf-${aws:region}
   iam:
     role:
       name: lambda-perf-${sls:stage}-role-${aws:region}
@@ -63,7 +65,7 @@ provider:
       Resource: "arn:aws:iam::${aws:accountId}:role/lambda-perf-${sls:stage}-role-${aws:region}"
     - Effect: Allow
       Action: "s3:GetObject"
-      Resource: "arn:aws:s3:::lambda-perf-dev-serverlessdeploymentbucket-bhtkqnoc4u6z/*"
+      Resource: "arn:aws:s3:::lambda-perf-${aws:region}/*"
     - Effect: Allow
       Action: "dynamodb:DeleteTable"
       Resource: "arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/report-log"
@@ -92,7 +94,6 @@ package:
     - "!README.md"
 
 functions:
-  
   reportLogProcessor:
     package:
       individually: true
