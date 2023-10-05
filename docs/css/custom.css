@@ -1,22 +1,28 @@
 html {
     position: relative;
     min-height: 100%;
+    background-color: #121212; /* Dark Background */
+    color: #ffffff; /* Light Text */
 }
 body {
-    margin-bottom: 120px; 
+    margin-bottom: 120px;
+    background-color: #121212; /* Dark Background */
+    color: #ffffff; /* Light Text */
 }
 hr {
     margin-bottom: 2px;
     margin-top: 4px;
+    border-color: #ffffff; /* Light Border */
 }
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px; 
+    height: 100px;
     line-height: 60px;
-    background-color: #f5f5f5;
+    background-color: #1e1e1e; /* Slightly Lighter Dark */
     text-align: center;
+    color: #e0e0e0; /* Light Text */
 }
 .container {
     width: auto;
@@ -27,24 +33,25 @@ hr {
     text-align: right;
 }
 .align-left {
-    float:left;
+    float: left;
 }
 .square {
-    background-color: #ffc107;
-    border: 1px solid #ffc107;
-    height:10px;
-    width:9%;
+    background-color: #0d6efd;
+    border: 1px solid #808080;
+    height: 10px;
+    width: 9%;
     display: inline-block;
-    margin-left:.5%;
+    margin-left: .5%;
 }
 .fixedHeight {
     height: 25px;
 }
 .disclaimer {
     font-size: 12px;
-    line-height:12px;
+    line-height: 12px;
+    color: #bbbbbb; /* Slightly Darker Text */
 }
-.btn:focus,.btn:active {
+.btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none;
 }
@@ -57,6 +64,7 @@ hr {
 }
 .badge, .itemData {
     font-family: 'Courier New', Courier, monospace;
+    color: #e0e0e0; /* Light Text */
 }
 .runtime {
     flex: 50%;
@@ -65,6 +73,7 @@ hr {
 .legend {
     text-align: right;
     font-size: 9px;
+    color: #bbbbbb; /* Slightly Darker Text */
 }
 .badge:empty {
     display: inline-block;

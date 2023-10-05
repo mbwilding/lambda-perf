@@ -90,11 +90,14 @@ const buildJsonFromData = (data) => {
     const initDurations = filteredData.map((e) =>
       parseFloat(e.initDuration.S, 10)
     );
+    const durations = filteredData.map((e) =>
+      parseFloat(e.duration.S, 10)
+    );
     const averageMemoryUsed = formatMaxThreeDigits(
       computeMean(filteredData.map((e) => parseFloat(e.maxMemoryUsed.S, 10)))
     );
     const averageDuration = formatMaxThreeDigits(
-      computeMean(filteredData.map((e) => parseFloat(e.duration.S, 10)))
+      computeMean(durations)
     );
     const averageColdStartDuration = formatMaxThreeDigits(
       computeMean(initDurations)
@@ -108,6 +111,7 @@ const buildJsonFromData = (data) => {
       runtime,
       displayName,
       initDurations,
+      durations,
       memorySize,
       architecture,
       averageMemoryUsed,

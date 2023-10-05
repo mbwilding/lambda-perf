@@ -97,7 +97,7 @@ const drawLang = async (idx, data) => {
     .cloneNode(true);
   newElement.id = `runtime_${idx}`;
   document.getElementById("runtimes").appendChild(newElement);
-  const coldStartElement = newElement.getElementsByClassName("runs")[0];
+  const runElement = newElement.getElementsByClassName("runs")[0];
 
   const averageColdStartDuration = newElement.getElementsByClassName(
     "averageColdStartDuration"
@@ -117,9 +117,9 @@ const drawLang = async (idx, data) => {
   const runtimeName = newElement.getElementsByClassName("runtimeName")[0];
   runtimeName.innerHTML = `${runtime.displayName}`;
 
-  for (let i = 0; i < data.initDurations.length; ++i) {
-    await sleep(data.averageDuration);
-    addSquare(coldStartElement);
+  for (let i = 0; i < data.durations.length; ++i) {
+    await sleep(data.duration[i]);
+    addSquare(runElement);
   }
 };
 
