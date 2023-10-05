@@ -26,4 +26,6 @@ docs/node_modules
 docs/public
 docs/app.js
 docs/package.json
-docs/package-lock.json
+
+**/.idea/
+**/package-lock.json
