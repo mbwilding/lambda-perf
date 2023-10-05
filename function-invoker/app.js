@@ -49,7 +49,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 exports.handler = async (event, context) => {
   const REGION = process.env.AWS_REGION;
   const PREFIX = "lambda-perf-";
-  const NB_INVOKE = 5;
+  const NB_INVOKE = 10;
   const DELAY = 30000;
   try {
     const lambdaClient = new LambdaClient({ region: REGION });
