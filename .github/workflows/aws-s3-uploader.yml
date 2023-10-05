@@ -3,10 +3,6 @@ name: build and upload artifacts in S3
 on:
   workflow_dispatch:
     inputs:
-      mfaCode:
-        type: string
-        description: MFA Code
-        required: true
       region:
         description: 'region on which you want to deploy'
         type: choice
