@@ -93,6 +93,9 @@ const buildJsonFromData = (data) => {
     const durations = filteredData.map((e) =>
       parseFloat(e.duration.S, 10)
     );
+    const memoryUsed = filteredData.map((e) =>
+      parseInt(e.maxMemoryUsed.S, 10)
+    );
     const averageMemoryUsed = formatMaxThreeDigits(
       computeMean(filteredData.map((e) => parseFloat(e.maxMemoryUsed.S, 10)))
     );
@@ -112,6 +115,7 @@ const buildJsonFromData = (data) => {
       displayName,
       initDurations,
       durations,
+      memoryUsed,
       memorySize,
       architecture,
       averageMemoryUsed,
