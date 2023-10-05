@@ -4,6 +4,7 @@ s3-uploader/runtimes/**/target
 s3-uploader/runtimes/**/obj
 s3-uploader/runtimes/**/bin
 s3-uploader/runtimes/*/code*.zip
+s3-uploader/node_modules/
 
 result-builder/node_modules
 report-log-processor/node_modules
