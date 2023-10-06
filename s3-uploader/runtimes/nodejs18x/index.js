@@ -1,7 +1,7 @@
 exports.handler = async (event, context) => {
-    const aws = require('aws-sdk');
-    const s3 = new aws.S3();
-    
+    const { S3Client, PutObjectCommand, DeleteObjectCommand } = require('@aws-sdk/client-s3');
+    const s3 = new S3Client({ region: process.env.AWS_REGION });
+
     const region = process.env.AWS_REGION;
     if (!region) {
         throw new Error("AWS_REGION not set");
@@ -18,10 +18,10 @@ exports.handler = async (event, context) => {
                 ContentType: 'text/plain',
                 Body: i.toString()
             };
-            await s3.putObject(params).promise();
+            await s3.send(new PutObjectCommand(params));
         }
 
-        await s3.deleteObject({ Bucket: bucket_name, Key: bucket_key }).promise();
+        await s3.send(new DeleteObjectCommand({ Bucket: bucket_name, Key: bucket_key }));
     } catch (e) {
         throw new Error(`An error occurred: ${e.message}`);
     }
