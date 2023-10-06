@@ -10,15 +10,11 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
-    directory: "report-log-processor"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm"
-    directory: "function-trigger-invoker"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "npm"
     directory: "function-trigger-deployer"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "report-log-processor"
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
