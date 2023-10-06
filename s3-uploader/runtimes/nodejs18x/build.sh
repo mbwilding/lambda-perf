@@ -5,5 +5,5 @@ rm ${DIR_NAME}/code_${ARCH}.zip 2> /dev/null
 
 pushd ${DIR_NAME}
 yarn install
-zip -r ../code_${ARCH}.zip *
+zip -r code_${ARCH}.zip *
 popd
