@@ -1,5 +1,5 @@
 {
   "configuration": "Release",
   "framework": "net6.0",
-  "function-runtime": "dotnet6",
+  "function-runtime": "dotnet6"
 }

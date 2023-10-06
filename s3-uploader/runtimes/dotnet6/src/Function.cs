@@ -26,6 +26,7 @@ public class Function
             {
                 BucketName = bucketName,
                 Key = bucketKey,
+                ContentType = "text/plain",
                 ContentBody = i.ToString()
             };
 

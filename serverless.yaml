@@ -87,6 +87,9 @@ provider:
     - Effect: Allow
       Action: "s3:*"
       Resource: "arn:aws:s3:::lambda-perf-${aws:region}/test/*"
+    - Effect: Allow
+      Action: "dynamodb:*"
+      Resource: "arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/lambda-perf-${aws:region}"
 
 package:
   patterns:
@@ -196,3 +199,17 @@ resources:
       Properties:
         QueueName: "lambda-perf-invoker"
         VisibilityTimeout: 900
+    LambdaPerfDynamoDBTable:
+      Type: "AWS::DynamoDB::Table"
+      Properties:
+        TableName:
+          Fn::Sub: lambda-perf-${AWS::Region}
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "N"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 5
+          WriteCapacityUnits: 5
