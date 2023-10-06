@@ -18,8 +18,23 @@ on:
         required: true
 
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      runner: ${{ steps.select.outputs.runner }}
+    steps:
+      - name: Check branch
+        id: select
+        run: |
+          if [ ${{ inputs.architecture }} == 'x86_64' ]; then
+            echo "runner=ubuntu-latest" >> $GITHUB_OUTPUT
+          else
+            echo "runner=self-hosted" >> $GITHUB_OUTPUT
+          fi
+          cat $GITHUB_OUTPUT
   build-upload:
-    runs-on: self-hosted
+    needs: setup
+    runs-on: ${{ needs.setup.outputs.runner }}
     steps:
       - uses: actions/checkout@v3
       - name: Configure AWS credentials
