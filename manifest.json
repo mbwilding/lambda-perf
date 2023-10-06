@@ -21,6 +21,13 @@
       "handler": "index.handler",
       "path": "python311",
       "architectures": ["x86_64", "arm64"]
+    },
+    {
+      "displayName": "nodejs18.x",
+      "runtime": "nodejs18.x",
+      "handler": "index.handler",
+      "path": "nodejs18x",
+      "architectures": ["x86_64", "arm64"]
     }
   ]
 }
