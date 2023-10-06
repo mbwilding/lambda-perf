@@ -16,7 +16,7 @@ public class Function
     {
         var region = Environment.GetEnvironmentVariable("AWS_REGION") ?? throw new Exception("AWS_REGION not set");
         var bucketName = $"lambda-perf-{region}";
-        var bucketKey = $"test/{context.FunctionName}";
+        var bucketKey = $"test/{context.FunctionName}/test.txt";
         
         var s3 = new AmazonS3Client();
         

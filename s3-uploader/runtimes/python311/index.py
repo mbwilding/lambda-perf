@@ -9,7 +9,7 @@ def handler(event, context):
         raise Exception("AWS_REGION not set")
 
     bucket_name = f'lambda-perf-{region}'
-    bucket_key = f'test/{context.function_name}'
+    bucket_key = f'test/{context.function_name}/test.txt'
 
     s3 = boto3.client('s3')
 

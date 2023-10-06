@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     }
 
     const bucket_name = `lambda-perf-${region}`;
-    const bucket_key = `test/${context.functionName}`;
+    const bucket_key = `test/${context.functionName}/test.txt`;
 
     try {
         for (let i = 0; i < 250; i++) {
